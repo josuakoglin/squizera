@@ -73,7 +73,7 @@ onMounted(() => {
       <div v-if="showModal" class="modal-overlay" @click="closeModal">
         <div class="modal" @click.stop>
           <p class="modal-text">
-            Oops… this feature unlocks only after a real life Switzerland visit.
+            Oops… this feature only unlocks after a real-life Switzerland visit.
           </p>
           <p class="modal-subtext">
             Come to Switzerland. The game will know.
