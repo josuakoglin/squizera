@@ -467,7 +467,7 @@ onMounted(() => {
   background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 50%, #e0e0e0 100%);
   border-radius: 20px;
   box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.8);
-  animation: fill-progress 30s linear forwards;
+  animation: fill-progress 35s linear forwards;
 }
 
 @keyframes fill-progress {
