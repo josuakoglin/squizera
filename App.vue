@@ -378,6 +378,7 @@ onMounted(() => {
   letter-spacing: 2px;
   background: rgba(255, 255, 255, 0.95);
   padding: 1rem 1.5rem;
+  padding-left: calc(1.5rem + 2px);
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-shadow:
@@ -605,17 +606,25 @@ onMounted(() => {
 @media (min-width: 768px) {
   .card {
     padding: 3.5rem 3rem;
+    width: 500px;
   }
 
   .title {
-    font-size: 4.5rem;
-    letter-spacing: 4px;
-    padding: 1rem 2rem;
+    font-size: 5rem;
+    letter-spacing: 6px;
+    padding: 1.5rem 3rem;
+    padding-left: calc(3rem + 6px);
+    min-width: auto;
+    width: auto;
   }
 
   .loading-button {
-    width: 380px;
+    width: 420px;
     height: 55px;
+  }
+
+  .loading-bar {
+    width: 420px;
   }
 
   .button-text {
