@@ -102,6 +102,7 @@ onMounted(() => {
   justify-content: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   overflow: hidden;
+  padding: 1rem;
 }
 
 .sky {
@@ -132,13 +133,13 @@ onMounted(() => {
 
 .title {
   font-family: 'Fredoka One', cursive;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 400;
   color: #ff0000;
   margin-bottom: 3rem;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   background: rgba(255, 255, 255, 0.95);
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-shadow:
@@ -150,6 +151,9 @@ onMounted(() => {
     0 9px 0 #330000,
     0 10px 10px rgba(0, 0, 0, 0.4);
   display: inline-block;
+  max-width: 100%;
+  min-width: 340px;
+  text-align: center;
 }
 
 .button-container {
@@ -366,7 +370,9 @@ onMounted(() => {
   }
 
   .title {
-    font-size: 5rem;
+    font-size: 4.5rem;
+    letter-spacing: 4px;
+    padding: 1rem 2rem;
   }
 
   .loading-button {
