@@ -8,7 +8,7 @@ const loadingTextIndex = ref<number>(0)
 const loadingTexts = [
   "Loading Switzerland…",
   "Don't worry, won't take long…",
-  "Only 9,051,029 residents to check…",
+  "Only 9,051,029 residents remaining",
   "Counting chocolate factories…",
   "Syncing with Alps…",
   "Calibrating cheese holes…",
