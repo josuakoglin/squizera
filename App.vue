@@ -84,64 +84,102 @@ const closeModal = (): void => {
 .card {
   position: relative;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.98);
+  background: transparent;
   padding: 3rem 2.5rem;
   border-radius: 30px;
-  border: 4px solid #2d3748;
-  box-shadow: 8px 8px 0 #2d3748;
+  border: none;
+  box-shadow: none;
   text-align: center;
   max-width: 90%;
   width: 360px;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 900;
-  color: #e53e3e;
+  color: #ff2d2d;
   margin-bottom: 0.5rem;
   letter-spacing: -0.5px;
-  text-shadow: 3px 3px 0 #fbb6ce;
+  -webkit-text-stroke: 3px #000;
+  text-shadow:
+    -3px -3px 0 #fff,
+    3px -3px 0 #fff,
+    -3px 3px 0 #fff,
+    3px 3px 0 #fff,
+    -3px 0 0 #fff,
+    3px 0 0 #fff,
+    0 -3px 0 #fff,
+    0 3px 0 #fff,
+    5px 5px 0 #fbb6ce;
 }
 
 .subtitle {
-  font-size: 1.1rem;
-  color: #553c9a;
+  font-size: 1.3rem;
+  color: #7c3aed;
   margin-bottom: 2rem;
-  font-weight: 700;
-  text-shadow: 1px 1px 0 #e9d8fd;
+  font-weight: 800;
+  -webkit-text-stroke: 2px #000;
+  text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff,
+    -2px 0 0 #fff,
+    2px 0 0 #fff,
+    0 -2px 0 #fff,
+    0 2px 0 #fff;
 }
 
 .status {
-  font-size: 0.85rem;
-  color: #667eea;
+  font-size: 1rem;
+  color: #3b82f6;
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 700;
+  -webkit-text-stroke: 1.5px #000;
+  text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff,
+    -2px 0 0 #fff,
+    2px 0 0 #fff,
+    0 -2px 0 #fff,
+    0 2px 0 #fff;
 }
 
 .primary-button {
   background: #fbbf24;
-  color: #1a202c;
-  border: 3px solid #1a202c;
-  padding: 1rem 2.5rem;
-  font-size: 1.1rem;
-  font-weight: 800;
-  border-radius: 20px;
+  color: #000;
+  border: 5px solid #000;
+  padding: 1.2rem 3rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+  border-radius: 25px;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 4px 4px 0 #1a202c;
-  min-width: 200px;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow:
+    6px 6px 0 #000,
+    inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+  min-width: 220px;
+  text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.5);
+  transform: rotate(-2deg);
+  outline: 3px solid #fff;
+  outline-offset: -8px;
 }
 
 .primary-button:hover {
   background: #f59e0b;
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 #1a202c;
+  transform: rotate(-2deg) translate(-2px, -2px);
+  box-shadow:
+    8px 8px 0 #000,
+    inset 0 -4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .primary-button:active {
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 #1a202c;
+  transform: rotate(-2deg) translate(2px, 2px);
+  box-shadow:
+    3px 3px 0 #000,
+    inset 0 -4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .modal-overlay {
@@ -238,7 +276,7 @@ const closeModal = (): void => {
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 </style>
