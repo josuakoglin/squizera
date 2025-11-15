@@ -16,6 +16,8 @@ const loadingTexts = [
   "Yodeling initialization…",
   "Banking your data securely…",
   "Neutralizing information…",
+  "Optimizing Swiss precision…",
+  "Verifying neutrality protocols…",
   "Almost there…",
   "Final fondue check…"
 ]
