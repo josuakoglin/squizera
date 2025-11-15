@@ -218,7 +218,7 @@ onMounted(() => {
   left: 5px;
   top: 50%;
   transform: translateY(-50%);
-  width: 0%;
+  width: 40px;
   max-width: calc(100% - 10px);
   height: 40px;
   background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 50%, #e0e0e0 100%);
@@ -229,7 +229,7 @@ onMounted(() => {
 
 @keyframes fill-progress {
   0% {
-    width: 0%;
+    width: 40px;
   }
   100% {
     width: calc(100% - 10px);
