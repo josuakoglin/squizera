@@ -18,9 +18,7 @@ const closeModal = (): void => {
     <div class="mountains"></div>
 
     <div class="card">
-      <h1 class="title">SQUIZera</h1>
-      <p class="subtitle">A tiny Swiss challenge</p>
-      <p class="status">Checking region…</p>
+      <h1 class="title">SQUIZERA</h1>
       <button class="primary-button" @click="openModal">
         Tap to Suizify
       </button>
@@ -45,6 +43,8 @@ const closeModal = (): void => {
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -95,11 +95,12 @@ const closeModal = (): void => {
 }
 
 .title {
+  font-family: 'Bangers', cursive;
   font-size: 3rem;
   font-weight: 900;
   color: #ff2d2d;
-  margin-bottom: 0.5rem;
-  letter-spacing: -0.5px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
   -webkit-text-stroke: 3px #000;
   text-shadow:
     -3px -3px 0 #fff,
@@ -111,40 +112,6 @@ const closeModal = (): void => {
     0 -3px 0 #fff,
     0 3px 0 #fff,
     5px 5px 0 #fbb6ce;
-}
-
-.subtitle {
-  font-size: 1.3rem;
-  color: #7c3aed;
-  margin-bottom: 2rem;
-  font-weight: 800;
-  -webkit-text-stroke: 2px #000;
-  text-shadow:
-    -2px -2px 0 #fff,
-    2px -2px 0 #fff,
-    -2px 2px 0 #fff,
-    2px 2px 0 #fff,
-    -2px 0 0 #fff,
-    2px 0 0 #fff,
-    0 -2px 0 #fff,
-    0 2px 0 #fff;
-}
-
-.status {
-  font-size: 1rem;
-  color: #3b82f6;
-  margin-bottom: 1rem;
-  font-weight: 700;
-  -webkit-text-stroke: 1.5px #000;
-  text-shadow:
-    -2px -2px 0 #fff,
-    2px -2px 0 #fff,
-    -2px 2px 0 #fff,
-    2px 2px 0 #fff,
-    -2px 0 0 #fff,
-    2px 0 0 #fff,
-    0 -2px 0 #fff,
-    0 2px 0 #fff;
 }
 
 .primary-button {
