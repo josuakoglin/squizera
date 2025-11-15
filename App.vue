@@ -373,14 +373,14 @@ onMounted(() => {
 
 .title {
   font-family: 'Fredoka One', cursive;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 400;
   color: #ff0000;
   margin-bottom: 3rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   background: rgba(255, 255, 255, 0.95);
   padding: 1rem 1.5rem;
-  padding-left: calc(1.5rem + 2px);
+  padding-left: calc(1.5rem + 1px);
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-shadow:
@@ -395,6 +395,7 @@ onMounted(() => {
   max-width: 100%;
   min-width: 340px;
   text-align: center;
+  white-space: nowrap;
 }
 
 .button-container {
@@ -451,7 +452,6 @@ onMounted(() => {
   background: linear-gradient(180deg, #ff6666 0%, #ff0000 50%, #cc0000 100%);
   border: 4px solid #990000;
   border-radius: 28px;
-  margin-top: 1.5rem;
   overflow: hidden;
   box-shadow:
     0 4px 8px rgba(0, 0, 0, 0.3),
@@ -608,16 +608,18 @@ onMounted(() => {
 @media (min-width: 768px) {
   .card {
     padding: 3.5rem 3rem;
-    width: 500px;
+    min-width: 500px;
+    width: auto;
   }
 
   .title {
-    font-size: 5rem;
-    letter-spacing: 6px;
-    padding: 1.5rem 3rem;
-    padding-left: calc(3rem + 6px);
+    font-size: 4rem;
+    letter-spacing: 4px;
+    padding: 1.5rem 2.5rem;
+    padding-left: calc(2.5rem + 4px);
     min-width: auto;
     width: auto;
+    white-space: nowrap;
   }
 
   .loading-button {
